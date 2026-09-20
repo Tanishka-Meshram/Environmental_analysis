@@ -123,24 +123,8 @@ AQI rises steadily as temperature increases.
 |---|---|---|---|---|---|
 | Average AQI | 43.8 | 52.8 | 62.1 | 70.0 | 77.3 |
 
-### 6.6 Correlation Analysis
 
-Pearson correlation between AQI and the other variables:
-
-| Variable | Correlation with AQI |
-|---|---|
-| PM2.5 | 0.676 |
-| NO2 | 0.580 |
-| Temperature | 0.576 |
-| PM10 | 0.525 |
-| Rainfall | -0.095 |
-| Green Environmental Index | -0.153 |
-| Wind Speed | -0.195 |
-| Humidity | -0.376 |
-
-PM2.5 has the strongest positive correlation with AQI, followed by NO2 and temperature. Humidity and wind speed are negatively correlated.
-
-### 6.7 Key Takeaways
+### 6.6 Key Takeaways
 
 1. PM2.5 is the main driver of AQI, with NO2, PM10, and temperature also contributing.
 2. Hotter, drier, and calmer days tend to have poorer air quality.
