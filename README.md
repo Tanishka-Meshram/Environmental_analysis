@@ -135,6 +135,20 @@ AQI rises steadily as temperature increases.
 
 This project analysed 500 days of environmental data (January 2025 to May 2026) to understand what influences the Air Quality Index (AQI) and to predict it using Linear Regression.
 
+## Limitations
+
+
+1. **Linear assumption.** Linear Regression assumes a straight-line relationship between the predictors and AQI. Real air quality can depend on more complex, non-linear interactions, which this model cannot capture.
+
+2. **Time dependence ignored.** The data is a daily time series, but each day was treated as independent. No lagged features (such as the previous day's AQI) were used, and the random split mixes past and future days.
+
+3. **Limited variables.** Only weather, three pollutants, and a green index were available. Factors such as traffic, industrial activity, and location were not included. A weather-only model reaches an R2 of just 0.32, so pollutant data is needed for reasonable predictions.
+
+4. **Class imbalance.** Only 2 of 500 days fall in "Unhealthy for Sensitive Groups", so the air quality category cannot be classified reliably. The project therefore models the AQI value (regression) instead.
+
+5. **Limited time coverage.** The data spans about 16 months (January 2025 to May 2026). June to December is covered in only one year, so conclusions about seasonality are limited.
+
+
 **Data and EDA findings**
 - The dataset was clean, with no missing values, no duplicates, and continuous daily records.
 - AQI averages about 60 (Moderate) and is roughly symmetric. About 72% of days are Moderate, 28% are Good, and only 2 days are Unhealthy for Sensitive Groups.
