@@ -130,3 +130,17 @@ AQI rises steadily as temperature increases.
 2. Hotter, drier, and calmer days tend to have poorer air quality.
 3. AQI is stable across the period, mostly in the Moderate range, with no clear seasonality.
 4. Only 2 records fall in "Unhealthy for Sensitive Groups", so the category is highly imbalanced.
+
+## Conclusion
+
+This project analysed 500 days of environmental data (January 2025 to May 2026) to understand what influences the Air Quality Index (AQI) and to predict it using Linear Regression.
+
+**Data and EDA findings**
+- The dataset was clean, with no missing values, no duplicates, and continuous daily records.
+- AQI averages about 60 (Moderate) and is roughly symmetric. About 72% of days are Moderate, 28% are Good, and only 2 days are Unhealthy for Sensitive Groups.
+- AQI shows no strong trend over time and only weak seasonality.
+- PM2.5 has the strongest correlation with AQI (0.68), followed by NO2 (0.58), temperature (0.58), and PM10 (0.53). Humidity (-0.38) and wind speed (-0.20) are negatively correlated.
+- Hotter, drier, and calmer days tend to have poorer air quality.
+
+
+Overall, the project shows that AQI is mainly driven by particulate matter and NO2, and that Linear Regression captures a large part, though not all, of its variation.
