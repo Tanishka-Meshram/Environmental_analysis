@@ -6,7 +6,6 @@ Statistical analysis and exploratory data analysis (EDA) of daily weather, pollu
 **Tools:** Python, Pandas, NumPy, Matplotlib, Seaborn
 
 ---
-
 ## 1. Introduction
 
 Air pollution is a major environmental and public-health concern. Air quality changes from day to day with weather conditions such as temperature, humidity, wind speed, and rainfall, and with pollutant levels such as PM2.5, PM10, and NO2.
